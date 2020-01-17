@@ -1,9 +1,6 @@
 .directory
 .DS_Store
 node_modules/
-builds/
-static/user/
-static/builds/
 arduino-1.8.5/
 
 package-lock.json
