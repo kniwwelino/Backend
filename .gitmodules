@@ -1,0 +1,4 @@
+[submodule "KniwwelinoBlockly"]
+	path = KniwwelinoBlockly
+	url = git@git.list.lu:BeeCreative4Kids/KniwwelinoBlockly.git
+	branch = kniwwelino_ui_web

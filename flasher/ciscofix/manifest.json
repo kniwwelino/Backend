@@ -1,0 +1,17 @@
+{
+  "name": "Kniwwelino",
+  "version": "1.2.0_cisco",
+  "board": "ESP8266",
+  "revision": "ESP-12",
+  "description": "Official Binaries for the KniwwelinoDemo",
+  "download": "https://code.kniwwelino.lu/flasher/ciscofix/ciscofix.zip",
+  "flash": [
+    {
+      "address": "0x0000",
+      "path": "firmware_cisco_01.bin"
+    },{
+      "address": "0x100000",
+      "path": "Kniwwelino_demo.spiffs.bin"
+    }
+  ]
+}

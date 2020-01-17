@@ -1,0 +1,28 @@
+{
+  "options": [
+  {
+      "name": "Kniwwelino",
+      "versions": [
+        {
+          "version": "1.2.0",
+          "board": "ESP8266",
+          "revision": "ESP-12",
+          "manifest": "https://code.kniwwelino.lu/flasher/v1.2.0/manifest.json",
+          "latest": true
+        }
+      ]
+    },
+    {
+      "name": "Kniwwelino",
+      "versions": [
+        {
+          "version": "1.1.0",
+          "board": "ESP8266",
+          "revision": "ESP-12",
+          "manifest": "https://code.kniwwelino.lu/flasher/v1.1.0/manifest.json",
+          "latest": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Kniwwelino",
+  "version": "1.2.0",
+  "board": "ESP8266",
+  "revision": "ESP-12",
+  "description": "Official Binaries for the KniwwelinoDemo",
+  "download": "https://code.kniwwelino.lu/flasher/v1.2.0/KniwwelinoDemo_v1.2.0.zip",
+  "flash": [
+    {
+      "address": "0x0000",
+      "path": "Kniwwelino_demo.ino.bin"
+    },{
+      "address": "0x100000",
+      "path": "Kniwwelino_demo.spiffs.bin"
+    }
+  ]
+}
