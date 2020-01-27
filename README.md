@@ -5,7 +5,7 @@ Copy a working Arduino portable installation that you testet to compile with Kni
 
 Adapt the folder name in the file ```builds/TEMPLATE/makefile``` to the path name your Arduino portable is installed.
 
-## Alternatively Install or prepacked Arduino
+## Alternatively Install our prepacked Arduino
 
 We provide a prepacked Arduino 1.8.5 for Linux on our Wiki. To use it for your server.
 
