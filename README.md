@@ -28,7 +28,7 @@ Please adapt the file config/default.json to your needs.
 
 ## Init submodules
 ```
-git submodule update --recursive
+git submodule update --init --recursive
 ```
 It seam that the submodule closure that is used by KniwwelinoBlockly is not compatible any more. So please manually downgrade to https://github.com/google/closure-library/releases/tag/v20160125
 
