@@ -1,9 +1,26 @@
 # Backend
 
-## Install arduino
+## Install Arduino from scratch
 Copy a working Arduino portable installation that you testet to compile with KniwwelinoLib. Make also sure to not only add all dependencies needed by KniwwelinoLib itself, but also to add all Libraries needed for the Blocks of KniwwelinoBlockly.
 
 Adapt the folder name in the file ```builds/TEMPLATE/makefile``` to the path name your Arduino portable is installed.
+
+## Alternatively Install or prepacked Arduino
+
+We provide a prepacked Arduino 1.8.5 for Linux on our Wiki. To use it for your server.
+
+```
+cd Backend
+wget https://doku.kniwwelino.lu/_media/stuff/arduino-1.8.5_linux.tar.gz
+tar -xzf arduino-1.8.5_linux.tar.gz
+```
+
+In case we add new dependencies to the Arduino instance, we recommend to download the tar again. If there is only a change in KniwwelinoLib, you can update it by:
+```
+cd Backend/arduino-1.8.5/portable/sketchbook/libraries/KniwwelinoLib/
+git pull
+
+```
 
 ## Configurate your MQTT server
 Install mosquitto or any other MQTT broker. Create there a user for the backend to connect to.
@@ -21,23 +38,6 @@ You need to have NodeJS installed in Version 8.17.0
 
 ```
 npm install
-```
-
-## Install Arduino as Compiler
-
-We provide a prepacked Arduino 1.8.5 for Linux on our Wiki. To use it for your server.
-
-```
-cd Backend
-wget https://doku.kniwwelino.lu/_media/stuff/arduino-1.8.5_linux.tar.gz
-tar -xzf arduino-1.8.5_linux.tar.gz
-```
-
-In case we add new dependencies to the Arduino instance, we recommend to download the tar again. If there is only a change in KniwwelinoLib, you can update it by:
-```
-cd Backend/arduino-1.8.5/portable/sketchbook/libraries/KniwwelinoLib/
-git pull
-
 ```
 
 ## Run the server
