@@ -23,6 +23,23 @@ You need to have NodeJS installed in Version 8.17.0
 npm install
 ```
 
+## Install Arduino as Compiler
+
+We provide a prepacked Arduino 1.8.5 for Linux on our Wiki. To use it for your server.
+
+```
+cd Backend
+wget https://doku.kniwwelino.lu/_media/stuff/arduino-1.8.5_linux.tar.gz
+tar -xzf arduino-1.8.5_linux.tar.gz
+```
+
+In case we add new dependencies to the Arduino instance, we recommend to download the tar again. If there is only a change in KniwwelinoLib, you can update it by:
+```
+cd Backend/arduino-1.8.5/portable/sketchbook/libraries/KniwwelinoLib/
+git pull
+
+```
+
 ## Run the server
 ```
 node app.js
