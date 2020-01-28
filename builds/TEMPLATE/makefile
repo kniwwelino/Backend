@@ -1,7 +1,7 @@
 ARDUINO_PATH = ../../arduino-1.8.5
 SKETCHBOOK   = $(ARDUINO_PATH)/portable/sketchbook
 HARDWARE     = $(ARDUINO_PATH)/portable/packages/
-ESPTOOL      = $(ARDUINO_PATH)/portable/packages/esp8266/esptool/0.4.12/esptool
+ESPTOOL      = $(ARDUINO_PATH)/portable/packages/esp8266/tools/esptool/0.4.12/esptool
 ESPTOOLS     = $(ARDUINO_PATH)/portable/packages/esp8266/tools
 SKETCH       = $(notdir $(CURDIR)).ino
 TARGET_DIR   = $(CURDIR)/build-esp8266
