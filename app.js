@@ -206,7 +206,7 @@ app.use('/termsofuse', function(req, res, next) {
     xmlHttp.open("GET", 'https://doku.kniwwelino.lu/termsofuseplatform?do=export_htmlbody', true); // true for asynchronous
     xmlHttp.send(null);
 });
-app.use(bodyParser.json());
+app.use(bodyParser.json({'limit':'2mb'}));
 //middelware to decode text/* data, e.g. to receive the arduino code
 app.use(function(req, res, next){
 	if (req.is('text/*')) {
