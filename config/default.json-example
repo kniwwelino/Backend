@@ -1,0 +1,12 @@
+{
+  "app": {
+    "port": 3000
+  },
+  "broker": {
+    "hostname": "*****",
+    "protocol": "mqtt",
+    "username": "*****",
+    "password": "*****",
+		"clientId": "MyInstance"
+  }
+}

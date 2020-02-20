@@ -1,4 +1,4 @@
 [submodule "KniwwelinoBlockly"]
 	path = KniwwelinoBlockly
-	url = https://github.com/kniwwelino/KniwwelinoBlockly.git
+	url = https://github.com/NUSTEM-UK/KniwwelinoBlockly.git
 	branch = web_master_dev
