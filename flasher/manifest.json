@@ -1,6 +1,18 @@
 {
   "options": [
-  {
+    {
+      "name": "Kniwwelino",
+      "versions": [
+        {
+          "version": "1.3.3",
+          "board": "ESP8266",
+          "revision": "ESP-12",
+          "manifest": "https://code.kniwwelino.lu/flasher/v1.3.3/manifest.json",
+          "latest": true
+        }
+      ]
+    },
+    {
       "name": "Kniwwelino",
       "versions": [
         {
