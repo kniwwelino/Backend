@@ -8,6 +8,7 @@ const fs = require('fs');
 const md5File = require('md5-file');
 const Queue = require('better-queue');
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
@@ -206,17 +207,14 @@ app.use('/termsofuse', function(req, res, next) {
     xmlHttp.open("GET", 'https://doku.kniwwelino.lu/termsofuseplatform?do=export_htmlbody', true); // true for asynchronous
     xmlHttp.send(null);
 });
+
 //added to use content from the Dokuwiki without enabling CORS
-app.use('/doku', function(req, res, next) {
-	var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = function() {
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            res.send(xmlHttp.responseText);
-    }
-		var uri = req.originalUrl.replace("doku/","");
-    xmlHttp.open("GET", `https://doku.kniwwelino.lu/${uri}`, true); // true for asynchronous
-    xmlHttp.send(null);
-});
+app.use('/doku', createProxyMiddleware({ target: 'https://doku.kniwwelino.lu', changeOrigin: true , //logLevel: 'debug',
+	pathRewrite: {
+	'^/doku': '/'
+	},
+}));
+
 app.use(bodyParser.json({'limit':'2mb'}));
 //middelware to decode text/* data, e.g. to receive the arduino code
 app.use(function(req, res, next){
